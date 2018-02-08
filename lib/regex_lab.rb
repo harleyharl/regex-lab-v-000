@@ -30,7 +30,10 @@ end
 
 def valid_phone_number?(phone)
 
-phone.scan(/\d|\W\d{10}/)
-binding.pry
+if phone.scan(/\d|\W\d{10}/).size == 10
+  true
+else
+  false
+end 
 
 end
