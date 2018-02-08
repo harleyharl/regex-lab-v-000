@@ -30,6 +30,6 @@ end
 
 def valid_phone_number?(phone)
 
-phone.scan(/\d|\W\d{10}/)
+!phone.scan(/\d|\W\d{10}/)
 
 end
