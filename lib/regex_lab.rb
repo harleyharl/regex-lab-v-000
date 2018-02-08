@@ -29,8 +29,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  valid_phone_numbers = []
-  valid_phone_numbers << phone.scan(/\d{10}/)
-  valid_phone_numbers
-  #  binding.pry
+
+!!phone.scan(/\d{10}/)
+
 end
