@@ -32,4 +32,5 @@ def valid_phone_number?(phone)
 
 phone.scan(/\d|\W\d{10}/)
 binding.pry
+
 end
