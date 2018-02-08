@@ -29,6 +29,6 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-   array = phone.scan(/\A.\d{10}/)
+   array = phone.scan(/\d{10}/)
    binding.pry
 end
